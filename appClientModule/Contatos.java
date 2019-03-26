@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 
 public class Contatos {
- ArrayList<Cliente> clientes = new ArrayList();
+ ArrayList<Cliente> clientes = new ArrayList<Cliente>();
 
     // variaveis
     protected int codi=0;
@@ -18,7 +18,8 @@ public class Contatos {
 
 
     public void Cadastrar_Cliente(){
-        Scanner ler = new Scanner(System.in); 
+        @SuppressWarnings("resource")
+		Scanner ler = new Scanner(System.in); 
         Cliente Cliente_cad = new Cliente();
         codi=codi + 1;
         Cliente_cad.setCod_Clie(codi);
